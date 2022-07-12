@@ -1,0 +1,16 @@
+:root {
+    --red-color: red;
+    --dark-color: black;
+    --light-color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.color-red {
+    color: var(--red-color);
+}
+
+.center-title-container {
+    width: 100vw;
+    text-align: center;
+}
