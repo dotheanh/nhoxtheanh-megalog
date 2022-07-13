@@ -40,7 +40,7 @@ html {
 }
 
 .margin-top-train {
-    margin-top: 35rem;
+    margin-top: 33rem;
 }
 
 .a-clock_bubble {
@@ -167,7 +167,7 @@ html {
 }
 
 .barrier-container {
-    margin-top: 10rem;
+    margin-top: 6rem;
     z-index: 99;
 }
 
@@ -268,4 +268,21 @@ html {
       font-size: 2rem;
       letter-spacing: 1rem;
     }
+}
+
+
+.construction-stripes-background {
+    background: repeating-linear-gradient(
+    -45deg,
+    #ffe100,
+    #ffe100, 2rem,
+    #000000 2rem,
+    #000000 4rem
+    );
+    padding: 2rem !important;
+}
+
+.construction-stripes-background div {
+    background-color: black;
+    color: #fff;
 }
