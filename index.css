@@ -26,6 +26,23 @@ html {
     color: var(--red-color);
 }
 
+.fab-container {
+    position:fixed;
+    bottom:2rem;
+    right:2rem;
+    cursor:pointer;
+    z-index: 9999;
+}
+
+.floating-action-button {
+    width:3rem;
+    height:3rem;
+    background:#A11692;
+    border-radius: 100%;
+    background: #FF4F79;
+    box-shadow: 2px 2px 2px #aaaaaa;
+}
+
 .center-title-container {
     width: 100vw;
     text-align: center;
