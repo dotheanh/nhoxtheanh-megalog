@@ -48,3 +48,9 @@ $widths-fractions: 1 2 3 4 5 !default;
         width: span(3/5);
     }
 }
+
+.u-1\/2\@from-medium {
+    @media (min-width: $from-medium) {
+        width: span(1/2);
+    }
+}

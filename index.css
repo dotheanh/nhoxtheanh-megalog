@@ -6,6 +6,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
 .color-red {
     color: var(--red-color);
 }
@@ -150,9 +162,14 @@
     }
 }
 
+.barrier-container {
+    margin-top: 10rem;
+    z-index: 99;
+}
+
 .img-barrier {
     position: absolute;
-    top: 90vh;
+    top: 70vh;
     left: 25vw;
     max-width: 45rem;
     z-index: 10;
@@ -160,7 +177,7 @@
 
 .img-barrier-light-right {
     position: absolute;
-    top: 90vh;
+    top: 70vh;
     left: 25vw;
     max-width: 45rem;
     z-index: 11;
@@ -169,7 +186,7 @@
 
 .img-barrier-light-left {
     position: absolute;
-    top: 90vh;
+    top: 70vh;
     left: 25vw;
     max-width: 45rem;
     z-index: 11;
