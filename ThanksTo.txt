@@ -1,0 +1,8 @@
+Parallax lib:
+https://github.com/locomotivemtl/locomotive-scroll
+
+
+
+Chap 1
+Image for train:
+https://www.freepik.com/free-vector/assortment-three-flat-trains_1125356.htm#query=modern%20train&position=0&from_view=search

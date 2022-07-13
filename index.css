@@ -14,3 +14,15 @@
     width: 100vw;
     text-align: center;
 }
+
+.long-horizontal-img {
+    max-width: 400%;
+}
+
+.train-container {
+    height: 650rem;
+}
+
+.margin-top-center {
+    margin-top: 35rem;
+}
