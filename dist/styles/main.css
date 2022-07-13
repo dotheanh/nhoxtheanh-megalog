@@ -1289,7 +1289,22 @@ html:not(.has-scroll-smooth) .c-fixed {
   text-align: center;
 }
 .c-speed-block_bubble.-right {
-  right: -30px;
+  right: -1.875rem;
+}
+.c-speed-block_bubble.-right2 {
+  right: 20vw;
+}
+.c-speed-block_bubble.-right3 {
+  right: 30vw;
+}
+.c-speed-block_bubble.-right4 {
+  right: 45vw;
+}
+.c-speed-block_bubble.-right5 {
+  right: 60vw;
+}
+.c-speed-block_bubble.-right6 {
+  right: 75vw;
 }
 .c-speed-block_bubble.-left {
   left: -30px;
@@ -1304,7 +1319,6 @@ html:not(.has-scroll-smooth) .c-fixed {
 }
 .c-speed-block_bubble:before {
   box-shadow: 2px 5px 8px 2px #888888;
-  background-color: var(--light-color);
   border-radius: 50%;
   bottom: 0;
   content: "";

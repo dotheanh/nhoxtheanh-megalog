@@ -66,6 +66,9 @@
         top: auto;
         bottom: 0;
     }
+    &.-random-x {
+        right: - random(50) + px;
+    }
 
     &::before {
         content:"";

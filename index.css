@@ -24,5 +24,128 @@
 }
 
 .margin-top-center {
-    margin-top: 35rem;
+    margin-top: 55rem;
+}
+
+.a-clock_bubble {
+    padding: 0;
+}
+
+.clocks-container {
+    margin-top: -30vh;
+}
+
+.clock-bubble-img {
+    width: 100%;
+    height: 100%;
+}
+
+.clock-hand-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.clock-hand-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.clock-hand-hour {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.clock-hand-minus {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.clock-hand-second {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.rotate-normal.clock-hand-hour {
+    position: absolute;
+    animation: rotation 30s infinite linear;
+}
+.rotate-normal.clock-hand-minus {
+    position: absolute;
+    animation: rotation 10s infinite linear;
+}
+.rotate-normal.clock-hand-second {
+    position: absolute;
+    animation: rotation 1s infinite linear;
+}
+
+.rotate-slow.clock-hand-hour {
+    position: absolute;
+    animation: rotation 60s infinite linear;
+}
+.rotate-slow.clock-hand-minus {
+    position: absolute;
+    animation: rotation 20s infinite linear;
+}
+.rotate-slow.clock-hand-second {
+    position: absolute;
+    animation: rotation 2s infinite linear;
+}
+
+.rotate-fast.clock-hand-hour {
+    position: absolute;
+    animation: rotation 15s infinite linear;
+}
+.rotate-fast.clock-hand-minus {
+    position: absolute;
+    animation: rotation 5s infinite linear;
+}
+.rotate-fast.clock-hand-second {
+    position: absolute;
+    animation: rotation 0.5s infinite linear;
+}
+
+.rotate-revert.clock-hand-hour {
+    position: absolute;
+    animation: rotation-revert 30s infinite linear;
+}
+.rotate-revert.clock-hand-minus {
+    position: absolute;
+    animation: rotation-revert 10s infinite linear;
+}
+.rotate-revert.clock-hand-second {
+    position: absolute;
+    animation: rotation-revert 1s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+@keyframes rotation-revert {
+    from {
+        transform: rotate(359deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
 }
