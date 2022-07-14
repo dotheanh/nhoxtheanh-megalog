@@ -1131,6 +1131,30 @@ html:not(.has-scroll-smooth) .c-fixed {
 .c-summary_list_item.is-inview:nth-child(6):after {
   transition-delay: 1s;
 }
+.c-summary_list_item.is-inview:nth-child(7) {
+  transition-delay: 0.7s;
+}
+.c-summary_list_item.is-inview:nth-child(7):after {
+  transition-delay: 1.1s;
+}
+.c-summary_list_item.is-inview:nth-child(8) {
+  transition-delay: 0.8s;
+}
+.c-summary_list_item.is-inview:nth-child(8):after {
+  transition-delay: 1.2s;
+}
+.c-summary_list_item.is-inview:nth-child(9) {
+  transition-delay: 0.9s;
+}
+.c-summary_list_item.is-inview:nth-child(9):after {
+  transition-delay: 1.3s;
+}
+.c-summary_list_item.is-inview:nth-child(10) {
+  transition-delay: 1s;
+}
+.c-summary_list_item.is-inview:nth-child(10):after {
+  transition-delay: 1.4s;
+}
 .c-summary_list_item a {
   display: block;
   padding: 8px 0;
@@ -1165,6 +1189,18 @@ html:not(.has-scroll-smooth) .c-fixed {
 }
 .c-summary_list_item.is-inview:nth-child(6) .c-summary_list_icon {
   transition-delay: 1.1s;
+}
+.c-summary_list_item.is-inview:nth-child(7) .c-summary_list_icon {
+  transition-delay: 1.2s;
+}
+.c-summary_list_item.is-inview:nth-child(8) .c-summary_list_icon {
+  transition-delay: 1.3s;
+}
+.c-summary_list_item.is-inview:nth-child(9) .c-summary_list_icon {
+  transition-delay: 1.4s;
+}
+.c-summary_list_item.is-inview:nth-child(10) .c-summary_list_icon {
+  transition-delay: 1.5s;
 }
 .c-section {
   position: relative;

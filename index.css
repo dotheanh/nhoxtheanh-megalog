@@ -31,6 +31,12 @@ html {
     bottom:2rem;
     right:2rem;
     z-index: 9999;
+    pointer-events: none;
+}
+
+#table-of-contents.showing .item-scroll-to {
+    pointer-events: all;
+    cursor: pointer;
 }
 
 .fab-container {
