@@ -8,42 +8,20 @@
         document.documentElement.classList.add('is-ready');
     },300)
 
-    let options = {
-        el: document.querySelector('#js-scroll'),
-        smooth: true,
-        getSpeed: true,
-        getDirection: true
-    }
 
-    if(document.querySelector('#js-scroll').getAttribute('data-horizontal') == 'true') {
-        options.direction = 'horizontal';
-        options.gestureDirection = 'both';
-        options.tablet = {
-            smooth: true,
-            direction: 'horizontal',
-            horizontalGesture: true
-        }
-        options.smartphone = {
-            smooth: false
-        }
-        options.reloadOnContextChange = true
-    }
-
-    setTimeout(() => {
-        const scroll = new LocomotiveScroll(options);
-        
+    setTimeout(() => {        
         // const target = document.querySelector('#section-references');
-        // scroll.scrollTo("bottom", {
+        // globalScroll.scrollTo("bottom", {
         //     duration: 100000,
         // });
 
         let dynamicBackgrounds = [];
         let dynamicColorElements = [];
 
-        scroll.on('scroll', (instance) => {
+        globalScroll.on('scroll', (instance) => {
             const progress = 360 * instance.scroll.y / instance.limit.y;
 
-            scroll.el.style.backgroundColor = `hsl(${progress}, 11%, 81%)`;
+            globalScroll.el.style.backgroundColor = `hsl(${progress}, 11%, 81%)`;
 
             dynamicBackgrounds.forEach(obj => {
                 obj.el.style.backgroundColor = `hsl(${progress}, 11%, 81%)`;
@@ -75,7 +53,7 @@
             $("#fab-clock .clock-hand-second").css("transform",`rotate(`+(35+second)+`deg)`);
         });
 
-        scroll.on('call', (value, way, obj) => {
+        globalScroll.on('call', (value, way, obj) => {
             if (value === 'dynamicBackground') {
                 if(way === 'enter') {
                     dynamicBackgrounds.push({

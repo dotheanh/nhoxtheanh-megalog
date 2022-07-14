@@ -673,6 +673,34 @@
         <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
 
         <script src="dist/locomotive-scroll.min.js"></script>
+        
+        <script>
+            var globalScroll;
+            (function () {
+                let options = {
+                    el: document.querySelector('#js-scroll'),
+                    smooth: true,
+                    getSpeed: true,
+                    getDirection: true
+                }
+
+                if(document.querySelector('#js-scroll').getAttribute('data-horizontal') == 'true') {
+                    options.direction = 'horizontal';
+                    options.gestureDirection = 'both';
+                    options.tablet = {
+                        smooth: true,
+                        direction: 'horizontal',
+                        horizontalGesture: true
+                    }
+                    options.smartphone = {
+                        smooth: false
+                    }
+                    options.reloadOnContextChange = true
+                }
+
+                globalScroll = new LocomotiveScroll(options);
+            })();
+        </script>
         <script src="src/scripts/main.js"></script>
         <script src="./index.js"></script>
     </body>

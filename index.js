@@ -50,5 +50,8 @@ function getNextReleaseTime() {
 }
 
 function customScrollTo(element) {
-    alert(element);
+    const target = document.querySelector(element);
+    globalScroll.scrollTo(target, {
+        duration: 500,
+    });
 }
