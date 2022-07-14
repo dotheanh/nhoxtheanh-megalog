@@ -32,10 +32,10 @@
     setTimeout(() => {
         const scroll = new LocomotiveScroll(options);
         
-        scroll.scrollTo("bottom", {
-            duration: 100000,
-            offset: 1000,
-        });
+        // const target = document.querySelector('#section-references');
+        // scroll.scrollTo("bottom", {
+        //     duration: 100000,
+        // });
 
         let dynamicBackgrounds = [];
         let dynamicColorElements = [];
