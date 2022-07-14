@@ -50,9 +50,10 @@ function getNextReleaseTime() {
     return nextDate;
 }
 
-function customScrollTo(element) {
+function customScrollTo(element, _offset = 0) {
     const target = document.querySelector(element);
     globalScroll.scrollTo(target, {
         duration: 500,
+        offset: _offset
     });
 }
