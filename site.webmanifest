@@ -1,9 +1,9 @@
 {
-    "name": "Locomotive Scroll",
-    "short_name": "Locomotive Scroll",
+    "name": "Nhoxtheanh Megalog",
+    "short_name": "Nhoxtheanh Megalog",
     "icons": [
         {
-            "src": "dist/images/favicons/android-chrome-144x144.png",
+            "src": "src/images/favicons/android-chrome-144x144.png",
             "sizes": "144x144",
             "type": "image/png"
         }
