@@ -48,3 +48,7 @@ function getNextReleaseTime() {
     nextDate = currentDate.setDate(currentDate.getDate() + (7 - currentDate.getDay()));
     return nextDate;
 }
+
+function customScrollTo(element) {
+    alert(element);
+}

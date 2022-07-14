@@ -31,7 +31,7 @@
             <div class="o-layout_item u-3/5@from-medium">
                 <ul class="c-summary_list">
                     <li class="c-summary_list_item u-label" data-scroll>
-                        <a href="#speed-control" data-scroll-to>
+                        <a onclick="customScrollTo(`#section-intro`)" data-scroll-to>
                             00. Intro
                             <span class="c-summary_list_icon u-icon">
                                 ↓
@@ -39,7 +39,7 @@
                         </a>
                     </li>
                     <li class="c-summary_list_item u-label" data-scroll>
-                        <a href="#scroll-direction" data-scroll-to>
+                        <a onclick="customScrollTo(`#section-chapter-1`)" data-scroll-to>
                             01. Chapter 1
                             <span class="c-summary_list_icon u-icon">
                                 ↓
@@ -47,7 +47,7 @@
                         </a>
                     </li>
                     <li class="c-summary_list_item u-label" data-scroll>
-                        <a href="#lerp-effect" data-scroll-to>
+                        <a onclick="customScrollTo(`#section-updating`)" data-scroll-to>
                             02. Updating
                             <span class="c-summary_list_icon u-icon">
                                 ↓
@@ -55,7 +55,7 @@
                         </a>
                     </li>
                     <li class="c-summary_list_item u-label" data-scroll>
-                        <a href="#fixed-elements" data-scroll-to>
+                        <a onclick="customScrollTo(`#section-about-this`)" data-scroll-to>
                             03. About this
                             <span class="c-summary_list_icon u-icon">
                                 ↓
@@ -63,7 +63,7 @@
                         </a>
                     </li>
                     <li class="c-summary_list_item u-label" data-scroll>
-                        <a href="#fixed-elements" data-scroll-to>
+                        <a onclick="customScrollTo(`#section-credits`)" data-scroll-to>
                             04. Credits
                             <span class="c-summary_list_icon u-icon">
                                 ↓
@@ -71,7 +71,7 @@
                         </a>
                     </li>
                     <li class="c-summary_list_item u-label" data-scroll>
-                        <a href="#fixed-elements" data-scroll-to>
+                        <a onclick="customScrollTo(`#section-references`)" data-scroll-to>
                             05. Sources & Refferences
                             <span class="c-summary_list_icon u-icon">
                                 ↓
@@ -79,7 +79,7 @@
                         </a>
                     </li>
                     <li class="c-summary_list_item u-label" data-scroll>
-                        <a href="#fixed-elements" data-scroll-to>
+                        <a onclick="customScrollTo(`#section-contact`)" data-scroll-to>
                             06. Contact
                             <span class="c-summary_list_icon u-icon">
                                 ↓
@@ -87,7 +87,7 @@
                         </a>
                     </li>
                     <li class="c-summary_list_item u-label" data-scroll>
-                        <a href="#fixed-elements" data-scroll-to>
+                        <a onclick="customScrollTo(`#section-ending`)" data-scroll-to>
                             07. The End
                             <span class="c-summary_list_icon u-icon">
                                 ↓
@@ -110,7 +110,7 @@
         </div>
 
         <div class="o-scroll" id="js-scroll" data-scroll-container>
-            <div data-scroll-section>
+            <section data-scroll-section id="section-intro">
                 <div class="o-container">
                     <header class="c-header" id="header">
                         <div class="c-header_heading" data-scroll data-scroll-speed="-8" data-scroll-position="top" data-scroll-target="#header" data-scroll-repeat>
@@ -152,7 +152,7 @@
                         </a>
                     </header>
                 </div>
-            </div>
+            </section>
 
             <!-- Spacing -->
             <section data-scroll-section>
@@ -179,7 +179,7 @@
             </section>
 
             <section class="c-section" data-scroll-section>
-                <div class="o-container" id="speed-control">
+                <div class="o-container">
                     <div class="o-layout -gutter">
                         <div class="o-layout_item u-2/5@from-medium center-title-container">
                             <div class="a-section-title -padding" data-scroll data-scroll-speed="-2" data-scroll-call="test">
@@ -202,8 +202,8 @@
 
 
             <!-- The Train -->
-            <section class="c-section" data-scroll-section>
-                <div class="o-container train-container" id="scroll-direction">
+            <section class="c-section" data-scroll-section id="section-train">
+                <div class="o-container train-container" id="scroll-train">
                     <div class="o-layout -gutter -bottom">
                         <div class="o-layout_item clocks-container">
                             <div class="c-speed-block" data-scroll data-scroll-speed="2">
@@ -285,7 +285,7 @@
                         </div>
                     </div>
                     <div class="c-direction-block_wrapper">
-                        <div class="c-section_infos -padding barrier-container" data-scroll data-scroll-sticky data-scroll-target="#scroll-direction">
+                        <div class="c-section_infos -padding barrier-container" data-scroll data-scroll-sticky data-scroll-target="#scroll-train">
                             <div data-scroll>
                                 <div class="c-sections_infos_text u-text"> 
                                     <img class="img-barrier" src="src/images/barriers/train-barrier-simplier.png"></img>
@@ -294,7 +294,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="-padding" data-scroll data-scroll-sticky data-scroll-target="#scroll-direction">
+                        <div class="-padding" data-scroll data-scroll-sticky data-scroll-target="#scroll-train">
                             <div class="c-section_infos_inner" data-scroll>
                                 <div class="c-direction-block margin-top-train" id="direction">
                                     <div class="c-direction-block_item">
@@ -338,7 +338,7 @@
             </section>
 
             <!-- Main Content -->
-            <section class="c-section" data-scroll-section>
+            <section class="c-section" data-scroll-section id="section-chapter-1">
                 <div class="o-container">
                     <div class="c-cta">
                         <h1 class="o-title" data-scroll>
@@ -358,7 +358,7 @@
             </section>
 
             <!-- Updating Content -->
-            <section class="c-section" data-scroll-section>
+            <section class="c-section" data-scroll-section id="section-updating">
                 <div class="o-layout_item"> </div>
                 <div class="o-layout_item"> </div>
                 <div class="o-layout_item"> </div>
@@ -401,7 +401,7 @@
             </section>
 
             <!-- Info -->
-            <section class="c-section" data-scroll-section>
+            <section class="c-section" data-scroll-section id="section-about-this">
                 <div class="o-container">
                     <div class="c-cta">
                         <div class="c-cta_content">
@@ -461,8 +461,8 @@
                 </div>
             </section>
 
-            <!-- Credit -->
-            <section class="c-section" data-scroll-section>
+            <!-- Credits -->
+            <section class="c-section" data-scroll-section id="section-credits">
                 <div class="o-container">
                     <div class="c-cta">
                         <div class="o-layout_item"> </div>
@@ -593,10 +593,10 @@
 
             <!-- Contact -->
             <section class="c-section -fixed" data-scroll-section data-persistent id="section-contact">
-                <div class="o-container" id="fixed-elements">
+                <div class="o-container" id="fixed-contact">
                     <div class="o-layout">
                         <div class="o-layout_item u-2/5@from-medium">
-                            <div class="c-section_infos -padding" style="max-width:100%" data-scroll data-scroll-sticky data-scroll-target="#fixed-elements">
+                            <div class="c-section_infos -padding" style="max-width:100%" data-scroll data-scroll-sticky data-scroll-target="#fixed-contact">
                                 <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
                                     <div class="c-lerp-block" style="margin-bottom: 0;">
                                         <b>Contact</b>
