@@ -59,9 +59,11 @@
             const clockProgress = (progress - NO_CLOCK_OFFSET)*360/(360 - NO_CLOCK_OFFSET);
             if (clockProgress < 0) {
                 $("#fab-container").css("visibility", "hidden");
+                $("#fab-container").removeClass("fab-show");
             }
             else {
                 $("#fab-container").css("visibility", "visible");
+                $("#fab-container").addClass("fab-show");
             }
             let hour = (clockProgress);
             let minus = (hour*12);
