@@ -52,24 +52,22 @@
             $("#fab-clock .clock-hand-minus").css("transform",`rotate(`+(-80+minus)+`deg)`);
             $("#fab-clock .clock-hand-second").css("transform",`rotate(`+(35+second)+`deg)`);
 
-            // UPDATE ARROW UP ↑ OR DOWN ↓ FOR SCROLL MENU
-            // if ($("#table-of-contents").hasClass("showing")) {
-            //     $("#table-of-contents .item-scroll-to").each(function( key, value ) {
-            //         let data = $(this).attr("data");
-            //         let offsetTopEle = $(data).offset().top;
-            //         // if (500 >= offsetTopEle && offsetTopEle > -100) {
-            //         //      $(this).find(".c-summary_list_icon").text("←");
-            //         // }
-            //         // else 
-            //         if (instance.scroll.y - offsetTopEle < 0) {
-            //              $(this).find(".c-summary_list_icon").text("↓");
-            //         }
-            //         else {
-            //             console.log(instance.scroll.y, offsetTopEle)
-            //             $(this).find(".c-summary_list_icon").text("↑");
-            //         }
-            //     });
-            // }
+            // HIGHLIGHT CURRENT showing POSITION IN MENU
+            if ($("#table-of-contents").hasClass("showing")) {
+                if (Object.keys(instance.currentElements).length > 0) {
+                    let sectionName = $(instance.currentElements[Object.keys(instance.currentElements)[0]].el).closest("section").attr("id");
+
+                    $("#table-of-contents .item-scroll-to").each(function( key, value ) {
+                        let data = $(this).attr("data");
+                        if (data.includes(sectionName)) {
+                            $(this).find(".c-summary_list_icon").text("←");
+                        }
+                        else {
+                            $(this).find(".c-summary_list_icon").text("");
+                        }
+                    });
+                }
+            }
         });
 
         globalScroll.on('call', (value, way, obj) => {
