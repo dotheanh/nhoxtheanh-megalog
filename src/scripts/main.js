@@ -51,6 +51,25 @@
             $("#fab-clock .clock-hand-hour").css("transform",`rotate(`+(0+hour)+`deg)`);
             $("#fab-clock .clock-hand-minus").css("transform",`rotate(`+(-80+minus)+`deg)`);
             $("#fab-clock .clock-hand-second").css("transform",`rotate(`+(35+second)+`deg)`);
+
+            // UPDATE ARROW UP ↑ OR DOWN ↓ FOR SCROLL MENU
+            // if ($("#table-of-contents").hasClass("showing")) {
+            //     $("#table-of-contents .item-scroll-to").each(function( key, value ) {
+            //         let data = $(this).attr("data");
+            //         let offsetTopEle = $(data).offset().top;
+            //         // if (500 >= offsetTopEle && offsetTopEle > -100) {
+            //         //      $(this).find(".c-summary_list_icon").text("←");
+            //         // }
+            //         // else 
+            //         if (instance.scroll.y - offsetTopEle < 0) {
+            //              $(this).find(".c-summary_list_icon").text("↓");
+            //         }
+            //         else {
+            //             console.log(instance.scroll.y, offsetTopEle)
+            //             $(this).find(".c-summary_list_icon").text("↑");
+            //         }
+            //     });
+            // }
         });
 
         globalScroll.on('call', (value, way, obj) => {

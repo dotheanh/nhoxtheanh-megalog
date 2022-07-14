@@ -34,6 +34,10 @@ html {
     pointer-events: none;
 }
 
+.item-scroll-to {
+    text-shadow: -0.2px -0.2px 0 #000, 0.2px -0.2px 0 rgb(255, 255, 255), -0.2px 0.2px 0 #000, 0.2px 0.2px 0 rgb(255, 255, 255);
+}
+
 #table-of-contents.showing .item-scroll-to {
     pointer-events: all;
     cursor: pointer;
