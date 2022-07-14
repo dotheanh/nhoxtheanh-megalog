@@ -26,6 +26,13 @@ html {
     color: var(--red-color);
 }
 
+#table-of-contents {
+    position:fixed;
+    bottom:2rem;
+    right:2rem;
+    z-index: 9999;
+}
+
 .fab-container {
     position:fixed;
     bottom:2rem;

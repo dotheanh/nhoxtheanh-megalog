@@ -33,6 +33,13 @@ $(document).ready(function () {
     }
     countDown();
     setInterval(countDown, 1000);
+
+    
+    $("#fab-clock").click(function() {
+        $("#table-of-contents .c-summary_list_item").each( function( key, value ) {
+            $(this).toggleClass("is-inview");
+        });
+    });
 });
 
 function getNextReleaseTime() {
