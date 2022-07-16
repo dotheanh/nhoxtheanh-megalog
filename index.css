@@ -241,6 +241,12 @@ html {
     z-index: 10;
 }
 
+.img-barrier-bar {
+    transform: rotate(45deg);
+    transform-origin: 90% 90%;
+    transition-duration: 2s;
+}
+
 .img-barrier-light-right {
     position: absolute;
     top: 70vh;

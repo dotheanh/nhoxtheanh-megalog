@@ -46,3 +46,22 @@ function customScrollTo(element, _offset = 0) {
         offset: _offset
     });
 }
+
+function handleUIAtSection(sectionName, scrollInstance) {
+    switch (sectionName) {
+        case "section-train": {
+            sectionTrainHandler(scrollInstance);
+            break;
+        }
+    }
+}
+
+function sectionTrainHandler (scrollInstance) {
+    // handle train barrier close
+    if(typeof scrollInstance.currentElements['train-barrier'] === 'object') {
+        let element = scrollInstance.currentElements['train-barrier'];
+        let progress = element.progress;
+        let angle = 45 - progress*45;
+        $(element.el).find(".img-barrier-bar").css("transform",`rotate(`+(angle)+`deg)`);
+    }
+}

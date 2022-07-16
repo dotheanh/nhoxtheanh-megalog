@@ -53,10 +53,10 @@
             $("#fab-clock .clock-hand-second").css("transform",`rotate(`+(35+second)+`deg)`);
 
             // HIGHLIGHT CURRENT showing POSITION IN MENU
-            if ($("#table-of-contents").hasClass("showing")) {
-                if (Object.keys(instance.currentElements).length > 0) {
-                    let sectionName = $(instance.currentElements[Object.keys(instance.currentElements)[0]].el).closest("section").attr("id");
+            if (Object.keys(instance.currentElements).length > 0) {
+                let sectionName = $(instance.currentElements[Object.keys(instance.currentElements)[0]].el).closest("section").attr("id");
 
+                if ($("#table-of-contents").hasClass("showing")) {
                     $("#table-of-contents .item-scroll-to").each(function( key, value ) {
                         let data = $(this).attr("data");
                         if (data.includes(sectionName)) {
@@ -67,6 +67,8 @@
                         }
                     });
                 }
+                
+                handleUIAtSection(sectionName, instance);
             }
         });
 
