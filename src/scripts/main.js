@@ -71,7 +71,11 @@
         });
 
         globalScroll.on('call', (value, way, obj) => {
-            if (value === 'dynamicBackground') {
+            if (value === 'onEnterSection') {
+                let currentSectionId = $(obj.el).attr("id");
+                console.log("onEnterSection", currentSectionId);
+            }
+            else if (value === 'dynamicBackground') {
                 if(way === 'enter') {
                     dynamicBackgrounds.push({
                         id: obj.id,

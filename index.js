@@ -1,16 +1,4 @@
 $(document).ready(function () {
-    // let i = 10;
-    // let int = setInterval(function () {
-    //     window.scrollTo({
-    //         top: i,
-    //         behavior: 'smooth'
-    //     });
-    //     i += 10;
-    //     if (i >= document.body.scrollHeight) clearInterval(int);
-    // }, 20);
-
-
-
     ///////////// COUNT DOWN TO NEW VERSION
     let daysItem = document.querySelector("#cdv-days");
     let hoursItem = document.querySelector("#cdv-hours");
@@ -34,15 +22,16 @@ $(document).ready(function () {
     countDown();
     setInterval(countDown, 1000);
 
-    
+    // handle click FAB
     $("#fab-clock").click(function() {
         $("#table-of-contents").toggleClass("showing");
         $("#table-of-contents .c-summary_list_item").each( function( key, value ) {
             $(this).toggleClass("is-inview");
         });
     });
-});
 
+    // handle barrier anim when scroll to train
+});
 function getNextReleaseTime() {
     const currentDate = new Date();
     let nextDate = currentDate.setHours(0, 0, 0, 1);
