@@ -31,6 +31,8 @@ $(document).ready(function () {
     });
 
     // handle barrier anim when scroll to train
+    // handle autio
+    initAudioPlayer();
 });
 function getNextReleaseTime() {
     const currentDate = new Date();
@@ -64,4 +66,11 @@ function sectionTrainHandler (scrollInstance) {
         let angle = 45 - progress*45;
         $(element.el).find(".img-barrier-bar").css("transform",`rotate(`+(angle)+`deg)`);
     }
+}
+
+function initAudioPlayer () {
+    const audioPlayer = document.getElementById('audio-controller');
+    audioPlayer.load();
+    audioPlayer.muted = false;
+    audioPlayer.play();
 }
